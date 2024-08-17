@@ -1,0 +1,28 @@
+:root{
+    --clrvar1: #fa7257;
+    --clrvar2: #fc63a7;
+    --clrvar3: #dd1264;
+    --clrvar4: #fddddb;
+    --lightClr: #ffffff;
+    --linearGrad1: linear-gradient(to right,var(--clrvar1),var(--clrvar2));
+
+    --fontVar1: "Roboto", sans-serif;
+
+    --headingFontSize: 3.2rem;
+    --btnFontSize: 1.4rem;
+    --contFontSize: 1.8rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}

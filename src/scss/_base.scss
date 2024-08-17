@@ -1,0 +1,30 @@
+@mixin d_xyCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d_yCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%headingText {
+    font-family: var(--fontVar1);
+    font-size: var(--headingFontSize);
+    font-weight: 600;
+    color: var(--lightClr);
+}
+
+%btnElement {
+    font-family: var(--fontVar1);
+    font-size: var(--btnFontSize);
+    font-weight: 600;
+    background-color: var(--lightClr);
+    color: var(--clrvar2);
+    border: none;
+    padding: .8rem 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+}

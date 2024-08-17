@@ -1,0 +1,44 @@
+@import "../../scss/base";
+
+.appBg {
+    height: 100vh;
+    background-image: var(--linearGrad1);
+    @include d_xyCenter;
+
+    h1 {
+        text-align: center;
+        @extend %headingText;
+    }
+    .showHideContent{
+        display: flex;  
+        column-gap: 12rem;
+        @media screen and (max-width: 767.5px){
+            flex-direction: column;
+        }
+        button{
+            margin-top: 2rem;
+            @extend %btnElement;
+        }
+        .nameContainer{
+            @include d_yCenter;
+        }
+        .nameHolder{
+            font-family: var(--fontVar1);
+            font-weight: 600;
+            font-size: var(--contFontSize);
+            text-align: center;
+            text-transform: capitalize;
+            background-color: var(--clrvar4);
+            padding: 4rem 2rem;
+            width: calc(100% + 4rem);
+            margin-top: 2rem;
+            border-radius: 1rem;
+            &.showElement{
+                visibility: visible;
+            }
+            &.hideElement{
+                visibility: hidden;
+            }
+        }
+    }
+}
